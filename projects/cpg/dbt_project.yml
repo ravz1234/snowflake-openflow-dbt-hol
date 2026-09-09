@@ -5,9 +5,9 @@
 # Everything else in this project reads from the vars below.
 # ---------------------------------------------------------------------------
 
-name: 'hol_cpg'
-version: '1.0.0'
-profile: 'snowflake_hol'
+name: "hol_cpg"
+version: "1.0.0"
+profile: "snowflake_hol"
 
 # Fusion-conformant: no config-version key, and a minimum version floor.
 require-dbt-version: [">=1.9.0"]
@@ -30,8 +30,8 @@ quoting:
 
 vars:
   # ---- TRACK IDENTITY (one obvious place per project) ---------------------
-  track_key: 'cpg'
-  track_name: 'Consumer packaged goods'
+  track_key: "cpg"
+  track_name: "Consumer packaged goods"
   track_description: >
     Order and product performance for a consumer packaged goods manufacturer:
     order value, customer lifetime value, inventory health (stockout, overstock,
@@ -41,9 +41,9 @@ models:
   hol_cpg:
     +materialized: view
     staging:
-      +tags: ['staging']
+      +tags: ["staging"]
     intermediate:
-      +tags: ['intermediate']
+      +tags: ["intermediate"]
     marts:
       +materialized: table
-      +tags: ['marts']
+      +tags: ["marts"]
