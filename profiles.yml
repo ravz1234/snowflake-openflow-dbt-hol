@@ -1,0 +1,18 @@
+user:
+  outputs:
+    default:
+      account: XJYINFC-YR80561
+      auth_type: password
+      client_session_keep_alive: true
+      connect_retries: 3
+      connect_timeout: 30
+      database: RAVI_HACKATHON_DATABASE
+      password: '#Manchester_2030'
+      retry_on_database_errors: true
+      role: ACCOUNTADMIN
+      schema: dbt_rmishra
+      threads: 6
+      type: snowflake
+      user: RVMISHRA
+      warehouse: COMPUTE_WH
+  target: default
